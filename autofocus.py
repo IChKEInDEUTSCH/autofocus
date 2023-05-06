@@ -1,6 +1,5 @@
 import cv2 as cv
 import sys
-import numpy as np
 import canny_edge_counts as cec
 import smoothing as smooth
 
