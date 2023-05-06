@@ -20,7 +20,6 @@ def autofocus(argv):
         src = argv[0]
     retval = True
     highest_edge_counts = 0
-    frames = 0
     while src.isOpened():
         retval, frame = src.read()
         if not retval:
