@@ -14,7 +14,7 @@ def bilateral_blur(argv,int_d = 5,int_colorSigma = 11,int_spaceSigma = 11):
         print ('Usage:/nmorph_lines_detection.py < path_to_image >')
         return -1
     else:
-        src = argv
+        src = argv[0]
 
     src = cv.bilateralFilter(src, int_d, int_colorSigma, int_spaceSigma)
 

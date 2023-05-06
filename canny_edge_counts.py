@@ -15,7 +15,7 @@ def canny_edge_counts(argv):
         print ('Usage:/nmorph_lines_detection.py < path_to_image >')
         return -1
     else:
-        src = argv
+        src = argv[0]
 
     canny = cv.Canny(src, 255/3, 255)
 

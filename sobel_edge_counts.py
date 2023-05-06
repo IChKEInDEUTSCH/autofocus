@@ -19,7 +19,7 @@ def sobel_edge_counts(argv):
         print ('Usage:/nmorph_lines_detection.py < path_to_image >')
         return -1
     else:
-        src = argv
+        src = argv[0]
     
     grad_x = cv.Sobel(src, ddepth, 1, 0, ksize=3, scale=scale, delta=delta, borderType=cv.BORDER_DEFAULT)
     # Gradient-Y

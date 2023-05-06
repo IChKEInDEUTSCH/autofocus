@@ -18,7 +18,7 @@ def autofocus(argv):
         print ('Usage:/nmorph_lines_detection.py < path_to_image >')
         return -1
     else:
-        src = argv
+        src = argv[0]
     retval = True
     highest_edge_counts = 0
     frames = 0

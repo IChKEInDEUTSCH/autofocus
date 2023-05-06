@@ -14,7 +14,7 @@ def gaussian_blur(argv,ksize = 3):
         print ('Usage:/nmorph_lines_detection.py < path_to_image >')
         return -1
     else:
-        src = argv
+        src = argv[0]
 
     src = cv.GaussianBlur(src, (ksize,ksize),cv.BORDER_CONSTANT)
     cv.imshow('9487',src)
