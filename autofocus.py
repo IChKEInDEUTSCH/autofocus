@@ -10,11 +10,11 @@ def autofocus(argv):
         src = cv.VideoCapture(argv[0])
         # Check if video is loaded fine
         if not src.isOpened():
-            print ('Error opening image: ' + argv[0])
+            print ('Error opening vid: ' + argv[0])
             return -1
     elif len(argv) == 0:
         print ('Not enough parameters')
-        print ('Usage:/nmorph_lines_detection.py < path_to_image >')
+        print ('Usage:/nautofocus.py < path_to_vid >')
         return -1
     else:
         src = argv[0]
